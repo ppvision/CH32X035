@@ -1,0 +1,3 @@
+[submodule "cmake"]
+	path = cmake
+	url = https://github.com/ppvision/MCU_Builder.git
