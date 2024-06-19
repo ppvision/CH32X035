@@ -39,7 +39,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_BINARY_DIR}/release)
 # include(lib/cmake_libs.cmake)
 include_directories(config)
 
-include(tinyusb.cmake)
 add_subdirectory(SDK)
 add_subdirectory(components/lcd)
 add_subdirectory(Apps/gpio)
@@ -47,6 +46,7 @@ add_subdirectory(Apps/SimulateCDC)
 add_subdirectory(Apps/FreeRTOS)
 
 
+# include(tinyusb.cmake)
 
 
 # add_executable(${APP_NAME} ${SRC_LIST})

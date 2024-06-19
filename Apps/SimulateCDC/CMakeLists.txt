@@ -7,15 +7,13 @@ add_executable(${APP})
 
 file( GLOB SRC_LIST *.c )
 
-# message("Dir: ${curr_dir}(${CMAKE_CURRENT_SOURCE_DIR})  Source list: ${SRC_LIST}")
-#include(../../tinyusb/src/CMakeLists.txt)
 
 
 add_map_output(${APP})
 add_extra_outputs(${APP})
 
 
-add_tinyusb(${APP})
+# add_tinyusb(${APP})
 
 target_sources(${APP} PRIVATE
     ${SRC_LIST}
