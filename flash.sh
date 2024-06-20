@@ -1,8 +1,8 @@
 #!/bin/bash
 
+# my dev : 
 usb_pdev=0x01120000
 firmware=""
-
 
 if [ $# -lt 1 ]; then
     echo "需要至少1个参数"
@@ -21,6 +21,5 @@ fi
 
 script_path=$(dirname "$0")
 
-# my dev : 
 
 WCHISPTool_CMD -p $usb_pdev -c $script_path/CH32V035.INIT -o program -v boot -f $firmware 
